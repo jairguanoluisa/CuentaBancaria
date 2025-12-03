@@ -7,10 +7,9 @@ public class CuentaAhorros extends Cuenta {
     public CuentaAhorros(float saldo, float tasaAnual) {
         super(saldo, tasaAnual);
         this.activa = true; //operación dentro
-        //this.activa = saldo >= 10000;
     }
     
-    @Override //sobreescibir
+    @Override //sobreescribir
     public boolean consignar(float cantidad) {
         if (activa) {
             return super.consignar(cantidad);
